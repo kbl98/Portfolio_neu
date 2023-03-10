@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+/* poppins-regular - latin */
+@import 'assets/scss/modules/_fonts.css';
+
+html,body{
+top:0;
+left:0;
+right:0;
+    min-height: 100vh;
+    background: #141D2F;
+    font-family: 'Poppins';
+    font-weight: 400;
+    
+  }
+
+   
