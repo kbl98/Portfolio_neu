@@ -1,0 +1,14 @@
+<div class="cont-portfolio">
+    <div class="headline-cont">
+        <img src="assets/img/LINE 3.png">
+        <h1>Portfolio</h1>
+    </div>
+    <p>This page is a sample of my work! Scroll down to see other<br>projects I have developed!</p>
+
+<app-project *ngFor="let project of projects.titels; let i =index"  [indexImpair]="i%2!=0" [title]="titles[i]" [explanation]="explanations[i]" [img]="img[i]" [language]="language[i]" ></app-project>
+
+
+
+</div>
+
+

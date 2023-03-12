@@ -1,0 +1,31 @@
+.cont-portfolio{
+
+    p{
+        font-size:16px;
+        color:white;
+        padding-left:100px;
+}
+}
+
+
+.headline-cont{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    z-index: 4;
+    left:0;
+    
+    img{
+width:50px;
+    }
+    h1{
+        color:white;
+        margin-left:50px;
+        font-size: 90px;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top:0;
+    }
+}
+
+

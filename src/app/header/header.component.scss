@@ -3,14 +3,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 100px;
-    gap: 774px;
-    max-width:1440px;
-    position: absolute;
-    height: 109.03px;
+    padding-left:100px;
+    padding-right: 100px;
+    width:100%;
+    position: fixed;
+    height: 110px;
     left: 0px;
     top: 0px;
-    
+    z-index: 10;
     background: #141D2F;
     backdrop-filter: blur(32.5px);
 }
@@ -24,11 +24,20 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width:311px;
+    width:500px;
+   
     a{
         color:white;
         font-size: 28px;
         font-family: 'poppins';
+        border:solid 3px transparent;
+        text-decoration: none;
+        
+        &:hover{
+            color: #00BEE8;
+            cursor: pointer;
+            border-bottom:solid 3px #4B47FF;;
+        }
     }
 
 }
