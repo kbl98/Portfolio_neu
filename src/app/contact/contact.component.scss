@@ -5,6 +5,8 @@
     align-items: center;
     flex-direction: column;
    padding-bottom:150px;
+   position: relative;
+   height:900px;
 }
 
 .headline{
@@ -55,28 +57,47 @@
 }
 
 .form{
+    z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right:100px;
+    span{
+        color:red;
+        width:100%;
+    }
     input{
         background-color: transparent;
         border:solid 1px #4B47FF;
         border-radius: 10px;
         width: 617px;
 height: 50px;
-margin-bottom: 35px;
+margin-top: 35px;
+padding-left:10px;
+color:white;
+font-size:18px;
+&:hover{
+    border:solid 1px #1AE6B6;
     }
+}
     textarea{
+        padding:10px;
         background-color: transparent;
         border:solid 1px #4B47FF;
         border-radius: 10px;
         width: 617px;
 height: 202px;
-margin-bottom: 35px;
+margin-top: 35px;
+color:white;
+font-size: 18px;
+&:hover{
+    border:solid 1px #1AE6B6;
+}
 
     }
     button{
+        margin-top:35px;
         display: flex;
 flex-direction: row;
 justify-content: center;
@@ -97,4 +118,30 @@ transition: all 125ms ease-in-out;
     background-color: #4B47FF;
 }
     }
+}
+
+.arrowup{
+    z-index: 4;
+    position: absolute;
+    bottom:20px;
+    right:100px;
+    width:35px;
+    height:35px;
+    border:solid 1px white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/img/Arrowup.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover{
+        cursor: pointer;
+        border:solid 1px #00BEE8;
+       background-image: url("/assets/img/Arrowgreen.png");
+    }
+}
+
+.redborder{
+    border:solid 1px red !important;
 }

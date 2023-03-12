@@ -12,5 +12,10 @@ export class ProjectComponent {
   @Input() title;
   @Input() language;
   @Input() indexImpair=false;
+  @Input() hover=false;
+
+  hovern(){
+    this.hover=true;
+  }
 
 }

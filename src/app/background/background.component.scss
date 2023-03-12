@@ -11,6 +11,7 @@
     overflow: hidden;
     left:-900px
 }
+
 .blue{
     position: absolute;
     height: 823px;
@@ -66,10 +67,10 @@
         }
 
         .footer-col{
-            position: absolute;
+            position: fixed;
             height: 673px;
             width:360px;
-            top:6000px;
+            top:5000px;
             right:0;
             filter: blur();
             z-index: 2;
