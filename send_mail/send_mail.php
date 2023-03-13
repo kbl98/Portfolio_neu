@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'junus@developerakademie.com';
+$recipient = 'dr.katja.becker-lindhorst@t-online.de';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
@@ -39,7 +39,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $subject = "Contact From " . $_POST['name'];
         $headers = "From:  noreply@developerakademie.com";
 
-        mail($recipient, $subject, $_POST['message'], $headers);
+        mail($recipient, $subject, $_POST['message'],$_Post['email'], $headers);
         header("Location: " . $redirect); 
 
         break;

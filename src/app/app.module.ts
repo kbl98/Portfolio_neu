@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     ContactComponent,
     FooterComponent,
     ContactFormComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
