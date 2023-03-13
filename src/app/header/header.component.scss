@@ -13,6 +13,21 @@
     z-index: 10;
     background: #141D2F;
     backdrop-filter: blur(32.5px);
+    .logo-img{
+        width:80px;
+        height:60px;
+        border-radius: 30%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:solid 1px #1AE6B6;
+    }
+    img{
+        z-index:10;
+        width:140px;
+        height:140px;
+    }
 }
 
 .logo{

@@ -16,7 +16,7 @@
     align-items: center;
 
     span{
-        transform:translateX(-40px) translateY(-150px) rotate(-90deg) ;
+        transform:translateX(-40px) translateY(-122px) rotate(-90deg) ;
         color:white;
         z-index:4;
         font-size: 88px;
@@ -93,6 +93,11 @@ transition: all 145ms ease-in-out;
     z-index: 4;
     display: flex;
     align-items: center;
+    a{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
     img{
         margin-right: 35px;
         width:35px;
@@ -100,6 +105,7 @@ transition: all 145ms ease-in-out;
         transition: all 125ms ease-in-out;
         &:hover{
             transform: scale(1.2);
+            cursor: pointer;
         }
     }
 

@@ -7,9 +7,6 @@ import { Component,Input } from '@angular/core';
 })
 export class ContactComponent {
 
-@Input() nameWrong=false;
-@Input() emailWrong=false;
-@Input() textWrong=false;
 
 
 }

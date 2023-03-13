@@ -1,0 +1,25 @@
+<form class="form" (submit)="sendMail()" #myForm  ngNativeValidate>
+           
+    <input required type="name" name="name"[class.redborder]="nameWrong"   placeholder="Your name" oninvalid="nameWrong"  #nameField>
+    <span *ngIf="nameWrong">Your name-form is not correct</span>
+    <input required type="email" name="email" [class.redborder]="emailWrong" placeholder="Your Email" oninvalid="emailWrong" #emailField >
+    <span *ngIf="emailWrong">Your name-form is not correct</span>
+    <textarea required name="message" placeholder="Your message" [class.redborder]="textWrong" oninvalid="textWrong" #messageField ></textarea>
+    <span *ngIf="textWrong">Your name-form is not correct</span>
+    <button type="submit" >Send message :)</button>
+    <a href="#start"><div class="arrowup"></div></a>
+
+    <div class="wait" *ngIf="waiting">
+        <div class="point-cont">
+            <div class="point" *ngIf="point1Active" ></div>
+            <div class="point" *ngIf="point2Active"></div>
+            <div class="point" *ngIf="point3Active"></div>
+        </div>
+    </div>
+
+    <div class="mail-sent" *ngIf="sent">
+        <span>Mail send succsessful!</span>
+    </div>
+</form>
+
+

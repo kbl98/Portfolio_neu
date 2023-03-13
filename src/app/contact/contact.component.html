@@ -12,16 +12,8 @@
             <span>Contact me through this form, i´m sure, I can contribute you and your work with my ideas and experience <br>
             You need a Frontend Developer? <b>Contact me!</b></span>
         </div>
-        <div class="form" >
-           
-            <input type="name" [class.redborder]="nameWrong"   placeholder="Your name" oninvalid="nameWrong" >
-            <span *ngIf="nameWrong">Your name-form is not correct</span>
-            <input type="email" [class.redborder]="emailWrong" placeholder="Your Email" oninvalid="emailWrong" >
-            <span *ngIf="emailWrong">Your name-form is not correct</span>
-            <textarea placeholder="Your message" [class.redborder]="textWrong" oninvalid="textWrong" ></textarea>
-            <span *ngIf="textWrong">Your name-form is not correct</span>
-            <button type="submit" >Send message :)</button>
-            <a href="#start"><div class="arrowup"></div></a>
-        </div>
+
+        <app-contact-form></app-contact-form>
+       
     </div>
 </div>
