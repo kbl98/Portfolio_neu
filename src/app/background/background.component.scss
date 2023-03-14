@@ -73,10 +73,10 @@
         }
 
         .footer-col{
-            position: fixed;
+            position: absolute;
             height: 673px;
             width:360px;
-            top:5000px;
+            bottom:0;
             right:0;
             filter: blur();
             z-index: 2;

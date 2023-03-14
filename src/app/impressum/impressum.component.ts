@@ -4,11 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-impressum',
   templateUrl: './impressum.component.html',
-  styleUrls: ['./impressum.component.scss']
+  styleUrls: ['./impressum.component.scss'],
 })
 export class ImpressumComponent {
-  constructor(private router:Router){
-
-  }
-
+  constructor(private router: Router) {}
 }

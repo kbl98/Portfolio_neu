@@ -32,6 +32,9 @@
         align-items: center;
         justify-content: center;
         border:solid 1px #1AE6B6;
+        &:hover{
+            cursor: pointer;
+        }
     }
     img{
         z-index:10;
@@ -39,6 +42,7 @@
         height:140px;
     }
     span{
+        margin-top:20px;
         color:white;
         font-size: 16px;
         border-bottom: solid 1px transparent;
@@ -52,34 +56,50 @@
 .icon-row2{
     z-index: 4;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     width:180px;
+    gap:35px;
     a{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    img{
-        margin-right: 35px;
         width:35px;
         height:35px;
         transition: all 125ms ease-in-out;
+      gap:35px;
+       
+    }
+   
+    .i1{
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    }
+
+    .i2{
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    }
+
+    .i3{
+        flex: none;
+        order:3;
+        flex-grow: 0;
         &:hover{
             transform: scale(1.2);
             cursor: pointer;
         }
-    
-    }
-
-    #i1{
-        flex-grow: 0;
-    }
-
-    #i2{
-        flex-grow: 1;
-    }
-
-    #i3{
-        flex-grow: 2;
     }
 }

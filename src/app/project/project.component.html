@@ -11,18 +11,18 @@
     </div>
 </div>-->
 
-<div class="p-cont" (mouseenter)="hover=true" (mouseleave)="hover=false">
-<img src="assets/img/{{img}}.png">
+<div class="p-cont" (mouseenter)="hover = true" (mouseleave)="hover = false">
+  <img src="assets/img/{{ img }}.png" />
 
-<div class="p-info" *ngIf="hover">
+  <div class="p-info" *ngIf="hover">
     <div class="button-box">
-        <button class="b1">Live test</button>
-        <button class="b2">Github</button>
+      <button class="b1">Live test</button>
+      <button class="b2">Github</button>
     </div>
     <div class="info-project">
-        <h1>{{title}}</h1>
-        <span>{{explanation}}</span>
-        <h2>{{language}}</h2>
+      <h1>{{ title }}</h1>
+      <span>{{ explanation }}</span>
+      <h2>{{ language }}</h2>
     </div>
-</div>
+  </div>
 </div>
